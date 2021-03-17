@@ -1,5 +1,0 @@
-User-agent: Google
-Disallow: /ajax/
-Disallow: /album.php
-Disallow: /.hacker
-Disallow: /index.php~

@@ -1,2 +1,0 @@
-Unzip the word file 
-locate \calender\wordsettings.xml and find the flag 

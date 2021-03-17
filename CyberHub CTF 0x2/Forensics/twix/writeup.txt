@@ -1,3 +1,0 @@
-check the twix png file with binwalk
-unzip the output
-run the elf file to get the flag 

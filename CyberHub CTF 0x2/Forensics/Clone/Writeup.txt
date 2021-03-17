@@ -1,5 +1,0 @@
-using exif tool there is an hex value in the comment 
-
-collect all hex and convert it to the text of flag 
-
-for i in {1..53};do exiftool CyberHub$i.jpg;done | grep -i comm | cut -d ":" -f2

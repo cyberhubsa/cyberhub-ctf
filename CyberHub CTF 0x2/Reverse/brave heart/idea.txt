@@ -1,3 +1,0 @@
-the programe takes the pasword as an argv , the do an xor operation with pre-stored number , and comper the result with saved values. 
-
-to solve take the stored values and do xor with the stored number then inter the password , you'll get the flag . 

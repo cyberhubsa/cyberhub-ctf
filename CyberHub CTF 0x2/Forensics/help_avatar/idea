@@ -1,6 +1,0 @@
-the flag is beeing injected to the image using tool called "appa" you can find it in github by searching google  for "appa stego tool" 
-
-to extract data use 'python3 appa.py -d "png_name"'
-
-
-tool link : 'https://github.com/csisl/appa' 

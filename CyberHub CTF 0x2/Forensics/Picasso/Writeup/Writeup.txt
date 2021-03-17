@@ -1,7 +1,0 @@
-1- check the processes running 
-volatility -f mem.dmp --profile=WinXPSP2x86 psscan
-2- dumping the mspaint process into a file
-volatility -f mem.dmp --profile=WinXPSP2x86 memdump -p 1636 -D .
-3- analyse the output file by iamge processing app "GIMP"
-4- change the image type to RGBA
-5- Tune the image offset until you reach the flag 

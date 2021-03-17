@@ -1,3 +1,0 @@
-find the cipher type --> templars-cipher
-
-use https://www.dcode.fr/templars-cipher

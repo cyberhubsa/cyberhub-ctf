@@ -1,2 +1,0 @@
-- When checking various fields in the arp packets, only the opcode field that varies.
-- Utilizing scapy scripting to read the pcap and parse opcode field to get base64 encode flag.

@@ -1,2 +1,0 @@
-for i in {1..277}; do cp CyberHub.JPG  "CyberHub$i.JPG"; done
-for i in {1..277};do exiftool -Comment="$(awk "NR==$i" out)" CyberHub$i.JPG; done
