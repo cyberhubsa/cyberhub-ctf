@@ -2,7 +2,7 @@
 Cyberhub is one of SAFCSP initiatives, aims to help universities students to improve their skills, share knowledge and hold their own programs and initiatives in their communities.
 
 Place|Team|University
----|---|---|---
+---|---|---
 1|Bloodhunters|King Fahd University of Petroleum and Minerals
 2|Cybernauts|University of Hafr Al Batin
 3|Cybernetics|King Abdulaziz University
