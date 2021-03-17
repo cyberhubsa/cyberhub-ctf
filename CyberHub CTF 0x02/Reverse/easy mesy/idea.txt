@@ -1,0 +1,14 @@
+an easy reversing ELF file , that taks usernage and password as an "argv" 
+
+it'll tell you if any of them is messing . 
+
+then it compairs username+"1234" with the password  
+
+
+so if the the user intered test as username then the password has to be test1234 
+
+no apacific input is requred only pass has to be the same as user+"1234"
+
+
+
+>> also it can be solve by changeing the zero flag befor jumping .

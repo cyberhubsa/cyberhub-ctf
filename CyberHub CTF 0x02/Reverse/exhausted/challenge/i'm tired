@@ -1,0 +1,201 @@
+
+$LC0:
+	.word	-10
+	.word	51
+	.word	40
+	.word	22
+	.word	82
+	.word	40
+	.word	1
+	.word	79
+	.word	-8
+	.word	78
+	.word	-10
+	.word	12
+	.word	23
+	.word	40
+	.word	19
+	.word	79
+	.word	40
+	.word	1
+	.word	76
+	.word	-2
+	.word	45
+	.word	40
+	.word	16
+	.word	-9
+	.word	-2
+	.word	80
+	.word	40
+	.word	72
+	.word	240
+	.word	26
+	.word	192
+	.word	64
+	.word	21
+	.word	15
+	.word	114
+	.word	22
+	.word	210
+	.word	73
+	.word	108
+	.word	26
+	.word	192
+	.word	64
+	.word	21
+	.word	62
+	.word	30
+	.word	26
+	.word	192
+	.word	43
+	.word	243
+	.word	64
+	.word	21
+	.word	75
+	.word	99
+	.word	16
+	.word	237
+	.word	64
+	.word	21
+	.word	36
+	.word	147
+	.word	100
+	.word	114
+	.word	58
+	.word	48
+	.word	64
+	.word	21
+	.word	22
+	.word	210
+	.word	49
+	.word	216
+	.word	27
+	.word	60
+	.word	64
+	.word	21
+	.word	12
+	.word	0
+	.word	49
+	.word	216
+	.word	16
+	.word	237
+	.word	40
+	.word	129
+	.section	.text.startup,"ax",@progbits
+	.align	2
+	.globl	main
+	.set	nomips16
+	.set	nomicromips
+	.ent	main
+	.type	main, @function
+main:
+	.frame	$sp,376,$31		# vars= 328, regs= 5/0, args= 16, gp= 8
+	.mask	0x800f0000,-4
+	.fmask	0x00000000,0
+	.set	noreorder
+	.set	nomacro
+	lui	$28,%hi(__gnu_local_gp)
+	addiu	$sp,$sp,-376
+	addiu	$28,$28,%lo(__gnu_local_gp)
+	sw	$17,360($sp)
+	lw	$17,%got(__stack_chk_guard)($28)
+	lui	$2,%hi($LC0)
+	lw	$3,0($17)
+	sw	$19,368($sp)
+	addiu	$2,$2,%lo($LC0)
+	addiu	$19,$sp,24
+	sw	$3,348($sp)
+	sw	$31,372($sp)
+	sw	$18,364($sp)
+	sw	$16,356($sp)
+	.cprestore	16
+	move	$3,$19
+	addiu	$4,$2,320
+$L2:
+	lw	$8,0($2)
+	lw	$7,4($2)
+	lw	$6,8($2)
+	lw	$5,12($2)
+	addiu	$2,$2,16
+	sw	$8,0($3)
+	sw	$7,4($3)
+	sw	$6,8($3)
+	sw	$5,12($3)
+	bne	$2,$4,$L2
+	addiu	$3,$3,16
+
+	lw	$2,0($2)
+	move	$18,$0
+	sw	$2,0($3)
+	.option	pic0
+	b	$L5
+	.option	pic2
+	li	$16,81			# 0x51
+
+$L14:
+	lw	$4,0($19)
+	nop
+	addiu	$4,$4,-12
+	xori	$4,$4,0x6b
+	sll	$4,$4,24
+	sra	$4,$4,24
+$L4:
+	lw	$25,%call16(putchar)($28)
+	nop
+	.reloc	1f,R_MIPS_JALR,putchar
+1:	jalr	$25
+	addiu	$18,$18,1
+
+	lw	$28,16($sp)
+	beq	$18,$16,$L12
+	addiu	$19,$19,4
+
+$L5:
+	slt	$2,$18,27
+	bne	$2,$0,$L13
+	andi	$2,$18,0x1
+
+	bne	$2,$0,$L14
+	li	$4,32			# 0x20
+
+	lw	$25,%call16(putchar)($28)
+	nop
+	.reloc	1f,R_MIPS_JALR,putchar
+1:	jalr	$25
+	addiu	$18,$18,1
+
+	lw	$28,16($sp)
+	bne	$18,$16,$L5
+	addiu	$19,$19,4
+
+$L12:
+	lw	$4,348($sp)
+	lw	$3,0($17)
+	nop
+	bne	$4,$3,$L15
+	move	$2,$0
+
+	lw	$31,372($sp)
+	lw	$19,368($sp)
+	lw	$18,364($sp)
+	lw	$17,360($sp)
+	lw	$16,356($sp)
+	jr	$31
+	addiu	$sp,$sp,376
+
+$L13:
+	lw	$4,0($19)
+	nop
+	addiu	$4,$4,12
+	xori	$4,$4,0x6b
+	sll	$4,$4,24
+	.option	pic0
+	b	$L4
+	.option	pic2
+	sra	$4,$4,24
+
+$L15:
+	lw	$25,%call16(__stack_chk_fail)($28)
+	nop
+	.reloc	1f,R_MIPS_JALR,__stack_chk_fail
+

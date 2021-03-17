@@ -1,0 +1,2 @@
+idea : 
+encrept the message you big endian storage tec , so if you want to read a char you have to start reading it from the last bit to first one  , also you have to be cerfull about the bits , it must be 8 ( all the flag is chars ) so if you found the character represented with less than 8 bits , you have to complete it with 0 , it'll be important with you reverse the order 

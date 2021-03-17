@@ -1,0 +1,7 @@
+collect the random stream from the post request "++-++-++-+"
+
+follow the straem on port 8888 and find the image 
+
+steghide the image to find the code.txt with the encoder code 
+
+there is missing value "Didit" on the encoder trying from 1--> 10 we can find the value 3 is the write the value  fo get the flag 

@@ -1,0 +1,22 @@
+the idea is like a way to show how the sympolic excution work , however i don't requre sympolic execution . 
+
+the bin file ask for a pass as an argv and then generate a random password with a random lenth , the convert reach char on the pass to the ascii int then collect the valuse and compair the total of the inerted password eith the generated one . 
+
+about 30  insted-if compares if it was equal 
+
+then 30 if inside it compairs it it was not equal 
+
+the about 10 asks if it was equal . 
+
+then 10 ask it if was not equal .
+
+to get the flag , all the staments should be true . 
+
+
+to solve , inter any random value as it is useless . 
+
+then follow the excution untell you see many "JNE" then copy the location of RDX to RAX  . 
+
+and follow the excution till 'je' the value of [rbp-0x7c]
+
+and do the same with next 'JNE' and 'JE' .

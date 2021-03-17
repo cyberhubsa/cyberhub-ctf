@@ -1,0 +1,9 @@
+User-agent: Applebot
+Disallow: /ajax/
+Disallow: /album.php
+Disallow: /checkpoint/
+Disallow: /contact_importer/
+Disallow: /etc/flag_327a6c4304ad5938eaf0efb6cc3e53dc.txt
+Disallow: /fbml/ajax/dialog/
+Disallow: /feeds/
+Disallow: /file_download.php

@@ -1,0 +1,3 @@
+# ln -s /etc/flag
+# zip --symlinks flag.zip flag
+

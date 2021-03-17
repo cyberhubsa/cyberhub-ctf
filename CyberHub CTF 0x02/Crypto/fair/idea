@@ -1,0 +1,16 @@
+the encrypthion algorithm is playfair cipher .
+
+key is 5X5 matrix by default it is fro a-z (without j)
+
+the key_world comes at the first of the matrix , the the rest of alphabet . 
+
+
+C	Y	B	E	R
+H	U	A	D	F
+G	I	K	L	M
+N	O	P	Q	S
+T	V	W	X	Z
+
+after decoding , reput the result on the flag format . 
+
+note : after decoding you will find : WARXRIORS  instade of WARRIORS , it's not istake , playfair works like that if the same char came 2 or more times after each other , it but x between each same char 

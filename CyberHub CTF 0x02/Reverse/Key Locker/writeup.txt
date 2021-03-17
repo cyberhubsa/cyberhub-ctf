@@ -1,0 +1,2 @@
+open the app in dns spy 
+use the base64 to decode the flag 
